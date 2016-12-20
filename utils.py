@@ -101,7 +101,7 @@ def load_corpus(corpus, split=0.8, V=10000, categories='pos', shuffle=0):
     train_sentences, test_sentences = get_train_test_sents(corpus, split, categories, shuffle)
     train_ids = preprocess_sentences(train_sentences, vocab)
     test_ids = preprocess_sentences(test_sentences, vocab)
-    return vocab, train_ids, test_ids
+    return vocab, train_ids, test_ids, test_sentences
 
 ##
 # Use this function
